@@ -68,66 +68,66 @@ MLOps Workflow
 
 1. Data & Feature Pipeline
 
-Fetches stock data using yfinance
+-> Fetches stock data using yfinance
 
-Builds technical indicators (SMA, EMA, RSI, MACD, returns)
+-> Builds technical indicators (SMA, EMA, RSI, MACD, returns)
 
-Encodes multi-stock information
+-> Encodes multi-stock information
 
 2. Model Training
 
-Trains multiple models (Linear, Random Forest, XGBoost)
+-> Trains multiple models (Linear, Random Forest, XGBoost)
 
-Logs parameters & metrics to MLflow
+-> Logs parameters & metrics to MLflow
 
-Selects best model based on evaluation metric
+-> Selects best model based on evaluation metric
 
-Saves final model to trained_models/
+-> Saves final model to trained_models/
 
 3. Experiment Tracking (MLflow)
 
-Tracks:
+-> Tracks:
 
-model parameters
+-> model parameters
 
-evaluation metrics
+-> evaluation metrics
 
-artifacts
+-> artifacts
 
-Enables reproducibility and comparison
+-> Enables reproducibility and comparison
 
 4. Inference Service (FastAPI)
 
-Loads trained model
+-> Loads trained model
 
-Builds features in real time
+-> Builds features in real time
 
-Exposes /predict endpoint
+-> Exposes /predict endpoint
 
-Returns next-day stock price prediction
+-> Returns next-day stock price prediction
 
 5. User Interface (Streamlit)
 
-User selects a stock ticker
+-> User selects a stock ticker
 
-Calls FastAPI service
+-> Calls FastAPI service
 
-Displays predicted price
+-> Displays predicted price
 
-Shows recent stock price chart
+-> Shows recent stock price chart
 
 6. Containerization & Orchestration
 
-FastAPI and Streamlit run as separate containers
+-> FastAPI and Streamlit run as separate containers
 
-Managed via Docker Compose
+-> Managed via Docker Compose
 
 7. CI Pipeline (GitHub Actions)
 
-Runs on every push
+-> Runs on every push
 
-Installs dependencies
+-> Installs dependencies
 
-Builds both Docker images
+-> Builds both Docker images
 
-Ensures system is always deployable
+-> Ensures system is always deployable

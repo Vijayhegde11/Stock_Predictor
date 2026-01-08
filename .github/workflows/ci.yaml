@@ -26,8 +26,8 @@ jobs:
 
       - name: Build FastAPI image
         run: | 
-          docker build stock-fastapi -f Dockerfile.fastapi .
+          docker build -t stock-fastapi -f Dockerfile.fastapi .
 
       - name: Build Streamlit image
         run: |
-          docker build -t stock-stramlit -f Dockerfile.streamlit .
+          docker build -t stock-streamlit -f Dockerfile.streamlit .

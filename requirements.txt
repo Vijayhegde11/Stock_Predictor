@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+yfinance
+pandas
+scikit-learn
+xgboost
+mlflow
+ta
+streamlit
+numpy
+requests
+python-multipart

@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  fastapi:
+    container_name: fastapi-service
+    build:
+      context: .
+      dockerfile: Dockerfile.fastapi
+    ports:
+      - "8000:8000"
+    restart: always
+
+  streamlit:
+    container_name: streamlit-service
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    ports:
+      - "8501:8501"
+    depends_on:
+      - fastapi
+    environment:
+      FASTAPI_URL: http://fastapi-service:8000
+    

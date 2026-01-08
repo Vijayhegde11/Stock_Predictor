@@ -5,6 +5,8 @@ An end-to-end MLOps project that demonstrates how to build, track, containerize,
 This project covers the full ML lifecycle:
 data ingestion → feature engineering → model training → experiment tracking → model export → inference service → UI → CI automation.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
 Problem Statement
 
 Build a scalable machine learning system that:
@@ -23,6 +25,7 @@ Provides a user-friendly web interface
 
 Is fully containerized and CI-enabled
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 System Architecture
 
@@ -59,8 +62,10 @@ System Architecture
         │
    Docker + CI Pipeline
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
 MLOps Workflow
+
 1. Data & Feature Pipeline
 
 Fetches stock data using yfinance
